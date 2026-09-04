@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
+    watch: {
+      ignored: ['**/.vs/**', '**/node_modules/**'],
+    },
   },
   test: {
     globals: true,
